@@ -73,7 +73,7 @@ $$
 
 ---
 
-## potential improvements
+## few potential improvements
 
 ### 1. adaptive weight tuning
 - the weights (α for bm25, β for embeddings) are currently fixed.  
@@ -81,7 +81,7 @@ $$
 
 ### 2. multi-stage re-ranking
 - introduce a second-pass re-ranking model, such as a fine-tuned llm, to refine the search results.  
-- could be based on learned ranking models like lambdamart or colbert.
+- could be based on learned ranking models like lambdamart or colbert, just to do a majority voting/ capture broader preferences.
 
 ### 3. streaming & caching optimization
 - improve efficiency by:
