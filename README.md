@@ -87,7 +87,6 @@ $$
 - improve efficiency by:
   - incremental indexing instead of rebuilding indexes on every run.
   - disk-based bm25 caching for large datasets.
-  - streaming llm inference instead of full re-ranking.
 
 ### 4. fuzzy finding and transforming search queries
 - if we feel that that the search query is not good enough/contextual by the user, we can transform using a small LM or use fzf to generate possible searches. 
