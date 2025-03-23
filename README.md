@@ -27,7 +27,7 @@ Or, if you're using the `pyproject.toml`:
 ```bash
 uv pip install -r requirements.txt -p pyproject.toml
 ```
-Add openrouter key to a .env
+Add openrouter(https://openrouter.ai/) key to a .env
 OR `export OPENROUTER_API_KEY='openrouterkey'`
 
 # usage
