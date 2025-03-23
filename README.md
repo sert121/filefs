@@ -1,5 +1,5 @@
 # FileFS
-
+A simplified file search engine/processor.
 ```
 .
 ├── engine.py               # Core engine or processing script for indexing the files
