@@ -6,7 +6,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from sentence_transformers import SentenceTransformer, util
 import nltk
-nltk.download('punkt')  # Add this line before using word_tokenize
+nltk.download('punkt')  
 from dotenv import load_dotenv
 from openai import OpenAI
 load_dotenv()
@@ -138,7 +138,6 @@ class Engine:
 
     def filter_using_llm(self, query, results):
         """search for the query and display results."""
-        # Create mapping from id to result for efficient lookups
         id_to_result = {result['id']: result for result in results}
 
         if not results:
