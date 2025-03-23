@@ -1,0 +1,11 @@
+Dataset Name: ICUVitals2025
+Samples: 10,500 patient admissions
+Features:
+- HR (heart rate)
+- BP (blood pressure)
+- SpO2 (oxygen saturation)
+Time Granularity: 1-min intervals
+Label: Mortality (binary)
+Notes:
+- De-identified in compliance with HIPAA
+- Data bias: Overrepresentation of patients aged 60+

@@ -1,0 +1,58 @@
+global:
+  seed: 42
+  num_workers: 4
+  batch_size: 32
+
+nerf:
+  data:
+    image_size: 256
+    num_views: 100
+    camera_distance: 2.0
+    fov: 60.0
+
+license_plate:
+  data:
+    image_size: 416
+    num_classes: 2  # background and license plate
+    anchor_boxes: [[10, 13], [16, 30], [33, 23]]
+    iou_threshold: 0.5
+
+clinical:
+  data:
+    features:
+      - heart_rate
+      - blood_pressure
+      - temperature
+      - oxygen_saturation
+      - respiratory_rate
+    sequence_length: 24  # hours
+    prediction_horizon: 12  # hours
+    normalize: true
+    fill_missing: true
+
+legal_bert:
+  data:
+    preprocessing:
+      remove_special_chars: true
+      normalize_whitespace: true
+      lowercase: true
+      max_length: 512
+    tokenizer:
+      model_name: "bert-base-uncased"
+      padding: "max_length"
+      truncation: true
+
+diffusion:
+  data:
+    image_size: 256
+    num_channels: 3
+    normalize: true
+    augmentations:
+      random_flip: true
+      random_rotation: true
+      color_jitter: true
+
+logging:
+  log_dir: "logs/preprocessing"
+  level: "INFO"
+  format: "%(asctime)s - %(levelname)s - %(message)s" 
