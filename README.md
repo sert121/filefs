@@ -35,7 +35,8 @@ OR `export OPENROUTER_API_KEY='openrouterkey'`
 streamlit run streamlit_app.py # this indexes and then launches the app
 ```
 here's a preview of the app  
-![app preview](https://i.ibb.co/N2g1w1PM/image)
+![image](https://github.com/user-attachments/assets/9a908b55-d5da-4721-a590-3fd3303092cc)
+
 
 
 ## approach to calculating relevance
