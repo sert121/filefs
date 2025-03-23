@@ -56,7 +56,6 @@ if query:
         for idx, result in enumerate(results):
             file_emoji = get_file_emoji(result['path'])
             with st.expander(f"{idx + 1}:  {result['path']} {file_emoji}"):
-                # st.markdown(f"`{result['path']}`")
                 st.text("Preview:")
                 st.code(result['snippet'])
 else:
